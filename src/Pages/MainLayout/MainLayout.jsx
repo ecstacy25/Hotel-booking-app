@@ -1,15 +1,14 @@
-// MainLayout.js
+
 import Navbar from "../../Components/Navbar/Navbar";
 import Hero from "../../Components/Hero/Hero";
 import HotelCard from "../../Components/HotelCard/HotelCard";
-import Dashboard from "../../Components/Dashboard/Dashboard";
 import Footer from "../../Components/Footer/Footer";
 import "./MainLayout.css";
 import Image1 from "../../Assets/FourPoints.jpg";
 import Image2 from "../../Assets/Hotel6.jpg";
 import Image3 from "../../Assets/Hotel7.jpg";
 
-// Sample hotel data
+
 const hotelsData = [
   {
     name: "Four Point",
@@ -38,8 +37,7 @@ const hotelsData = [
     "Ut egestas libero et imperdiet fermentum. Fusce non velit auctor, lobortis ligula a, tempor urna.",
     image: Image3,
   },
-  
-  // Add more sample data here
+ 
 ];
 
 const MainLayout = () => {
@@ -52,7 +50,6 @@ const MainLayout = () => {
           <HotelCard key={index} hotel={hotel} />
         ))}
       </div>
-      {/* <Dashboard /> */}
       <Footer />
     </div>
   );
